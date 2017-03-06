@@ -1,0 +1,80 @@
+/* -------------------------------------------------------------
+  FILE:   _TYPOGRAPHY.SCSS
+  AUTHOR: Zaine Kingi
+  VER:    1.0.0
+  DESC:   Main SASS partial for the styling of all typographic
+          elements for the Responsive Layout project.
+------------------------------------------------------------- */
+
+body {
+  font-family: $open-sans;
+  color: $text-color;
+}
+p {
+  @include type(1rem,1.7rem,lighter,$text-color);
+}
+h2 {
+  margin-bottom: 35px;
+  @include type(1.8rem,normal,lighter,#{$heading-color},uppercase);
+  @include tablet {
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
+h3 {
+  margin-bottom: 0px;
+  @include type(1.5rem,1.2rem,lighter,#{$heading-color},capitalize);
+}
+.name {
+  @include tablet {
+    text-align: center;
+    flex-grow: 2;
+  }
+
+  @include desktop {
+    text-align: left;
+  }
+}
+.mainNav {
+  li {
+    @include type(1.2rem,1rem,bold,#{$heading-color},uppercase);
+    @include desktop {
+      @include type(1rem,2.5rem);
+    }
+  }
+}
+.intro-wrapper {
+  p {
+    @include tablet {
+      @include type(1.2rem,2.5rem);
+      text-align: left;
+    }
+  }
+}
+.portfolio {
+  p {
+    color: $heading-color;
+  }
+}
+.contact {
+  p {
+    @include desktop {
+      @include type(1.2rem, 2.4rem);
+
+    }
+  }
+}
+.footer-nav {
+  @include tablet {
+    @include type(.9rem,3rem,normal,#{$heading-color},uppercase);
+  }
+}
+footer {
+  p {
+    color: $heading-color;
+
+    a {
+      color: $heading-color;
+    }
+  }
+}

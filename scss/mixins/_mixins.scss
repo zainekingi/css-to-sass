@@ -1,0 +1,66 @@
+/* -------------------------------------------------------------
+  FILE:   _MIXINS.SCSS
+  AUTHOR: Zaine Kingi
+  VER:    1.0.0
+  DESC:   Main SASS partial for all mixin declarations
+          for the Responsive Layout project.
+------------------------------------------------------------- */
+
+/* ------------------------------------------------------------
+  Typography Mixin
+   Params:
+      font-size
+      line-height
+      font-weight
+      color
+ ------------------------------------------------------------ */
+@mixin type($fSize:"", $lHeight:"", $fWeight:"", $color:"", $tTransform:"") {
+  font-size: #{ $fSize };
+  line-height: #{ $lHeight };
+  font-weight: #{ $fWeight };
+  color: #{ $color };
+  text-transform: #{ $tTransform };
+}
+
+/* ------------------------------------------------------------
+  Vendor Prefix Mixin
+  Params:
+    property
+    value
+ ----------------------------------------------------------- */
+@mixin prefix($prop, $val) {
+  -webkit-#{ $prop }: $val; // Android, IOS, Chrome, Safari
+  -moz-#{ $prop }: $val; // FF
+  -ms-#{ $prop }: $val; // IE
+  #{ $prop }: $val;
+}
+
+/* -----------------------------------------------------------
+  Border Mixin
+  Params:
+    position: top, bottom, left, right - default ALL.
+    size
+    style
+    color
+ ---------------------------------------------------------- */
+@mixin border($size, $style, $color, $pos: "") {
+  border#{ -$pos }: $size $style $color;
+}
+
+/* -------------------------------------------------------------
+  Media queries
+    Tablet, Desktop
+ ------------------------------------------------------------ */
+
+@mixin tablet {
+  @media (min-width: #{ $tablet-view }) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{ $desktop-view }) {
+    @content;
+  }
+}
+

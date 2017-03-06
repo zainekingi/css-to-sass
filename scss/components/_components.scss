@@ -1,0 +1,140 @@
+/* -------------------------------------------------------------
+  FILE:   _COMPONENTS.SCSS
+  AUTHOR: Zaine Kingi
+  VER:    1.0.0
+  DESC:   Main SASS partial for all component elements
+          of the Responsive Layout project.
+------------------------------------------------------------- */
+
+.mainNav {
+  width: 90%;
+  margin: 0 auto 35px;
+  li {
+    margin: 10px auto;
+    padding: 15px 0;
+    background-color: $bg-color-light;
+
+    @include tablet {
+      background-color: $bg-color-dark;
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  @include desktop {
+    width: 30%;
+  }
+}
+.wrapper {
+  width: 100%;
+  margin: 0px auto;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  @extend %isFlex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    width: 90%;
+  }
+}
+.intro-wrapper {
+  margin: 0 auto 35px;
+  @extend %isFlex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    p {
+      padding: 0 25px 0 0;
+      margin: 0;
+    }
+  }
+}
+.profile-pic, .work {
+  height: auto;
+  width: 70%;
+  margin: 0 auto 25px;
+
+  @include tablet {
+    width: 500px;
+    height: 200px;
+  }
+}
+.work, .contact {
+  width: 100%;
+  margin-top: 35px;
+}
+.contact {
+  @include tablet {
+    flex-direction: column;
+    width: 70%;
+    margin: 35px auto;
+  }
+
+  @include desktop {
+    width: 65%;
+  }
+}
+.work-item {
+  @include tablet {
+    width: 49%;
+  }
+  @include desktop {
+    width: 31%;
+  }
+}
+.portfolio {
+  background-color: $bg-color-light;
+}
+.skills {
+  width: 100%;
+  @include border(1px,solid,$border-color,bottom);
+
+  @include desktop {
+    width: 65%;
+  }
+}
+.skills-list {
+  padding-top: 25px;
+
+  @include tablet {
+    width: 50%;
+  }
+}
+.footer {
+  border-top: 1px solid $border-color;
+  margin: 0px auto;
+  @extend %isFlex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-nav {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+  }
+}
+.back-to-top {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}

@@ -1,0 +1,13 @@
+/* -------------------------------------------------------------
+  FILE:   STYLES.SCSS
+  AUTHOR: Zaine Kingi
+  VER:    1.0.0
+  DESC:   Main SASS file for importing all partial files for
+          the Responsive Layout project.
+------------------------------------------------------------- */
+
+@import "variables/_variables.scss";
+@import "mixins/_mixins.scss";
+@import "base/_base.scss";
+@import "components/_components.scss";
+@import "typography/_typography.scss";

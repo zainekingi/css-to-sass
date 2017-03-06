@@ -1,0 +1,32 @@
+/* -------------------------------------------------------------
+  FILE:   _VARIABLES.SCSS
+  AUTHOR: Zaine Kingi
+  VER:    1.0.0
+  DESC:   Main SASS partial for all variable declarations
+          for the Responsive Layout project.
+------------------------------------------------------------- */
+
+/* colours */
+$heading-color: #333;
+$text-color: #666;
+$border-color: #e7e7e7;
+$bg-color-dark: #fafafa;
+$bg-color-light: #fff;
+
+/* font stack */
+$open-sans:   'Open Sans', Arial, sans-serif;
+
+/* media query  */
+$tablet-view: 768px;
+$desktop-view: 1024px;
+
+/* placeholder variables */
+// flexbox
+%isFlex {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
