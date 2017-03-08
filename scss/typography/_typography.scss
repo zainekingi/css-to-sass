@@ -11,11 +11,11 @@ body {
   color: $text-color;
 }
 p {
-  @include type(1rem,1.7rem,lighter,$text-color);
+  @include type($fSize-p,1.7rem,lighter,$text-color);
 }
 h2 {
   margin-bottom: 35px;
-  @include type(1.8rem,normal,lighter,#{$heading-color},uppercase);
+  @include type($fSize-h2,normal,lighter,#{$heading-color},uppercase);
   @include tablet {
     text-align: center;
     flex-basis: 100%;
@@ -23,7 +23,7 @@ h2 {
 }
 h3 {
   margin-bottom: 0px;
-  @include type(1.5rem,1.2rem,lighter,#{$heading-color},capitalize);
+  @include type($fSize-h3,1.2rem,lighter,#{$heading-color},capitalize);
 }
 .name {
   @include tablet {
@@ -37,16 +37,16 @@ h3 {
 }
 .mainNav {
   li {
-    @include type(1.2rem,1rem,bold,#{$heading-color},uppercase);
+    @include type($fSize-nav-li,1rem,bold,#{$heading-color},uppercase);
     @include desktop {
-      @include type(1rem,2.5rem);
+      @include type($fSize-nav-li-tab,2.5rem);
     }
   }
 }
 .intro-wrapper {
   p {
     @include tablet {
-      @include type(1.2rem,2.5rem);
+      @include type($fSize-intro-p-tab,2.5rem);
       text-align: left;
     }
   }
@@ -59,14 +59,14 @@ h3 {
 .contact {
   p {
     @include desktop {
-      @include type(1.2rem, 2.4rem);
+      @include type($fSize-contact-p-desk, 2.4rem);
 
     }
   }
 }
 .footer-nav {
   @include tablet {
-    @include type(.9rem,3rem,normal,#{$heading-color},uppercase);
+    @include type($fSize-footerNav-tab,3rem,normal,#{$heading-color},uppercase);
   }
 }
 footer {
