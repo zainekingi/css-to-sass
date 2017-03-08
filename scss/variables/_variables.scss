@@ -16,6 +16,19 @@ $bg-color-light: #fff;
 /* font stack */
 $open-sans:   'Open Sans', Arial, sans-serif;
 
+/* font sizes */
+$fSize-p: 1rem;
+$fSize-h2: 1.8rem;
+$fSize-h3: 1.5rem;
+$fSize-nav-li: 1.2rem;
+/* font sizes for tablet */
+$fSize-nav-li-tab: 1rem;
+$fSize-intro-p-tab: 1.2rem;
+$fSize-footerNav-tab: .9rem;
+/* font sizes for desktop */
+$fSize-contact-p-desk: 1.2rem;
+
+
 /* media query  */
 $tablet-view: 768px;
 $desktop-view: 1024px;
