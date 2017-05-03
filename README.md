@@ -1,2 +1,2 @@
-# project-5
-Zaine Kingi's CSS to SASS project files for Treehouse Project 5.
+# CSS To SASS
+Converting the HTML and CSS responsive website CSS to SASS. 
